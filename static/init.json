@@ -1,0 +1,138 @@
+{
+    "buttons": [
+        { "btnCode": "new", "btnName": "新增", "btnIcon": "add", "btnTitle": "新增一个XX", "btnClass": "success ", "btnStyle": 1 },
+        { "btnCode": "export", "btnName": "导出", "btnIcon": "export", "btnTitle": "导出数据", "btnClass": "warning  ", "btnStyle": 1 },
+        { "btnCode": "edit", "btnName": "编辑", "btnIcon": "edit", "btnTitle": "编辑", "btnClass": "warning  ", "btnStyle": 2 },
+        { "btnCode": "delete", "btnName": "删除", "btnIcon": "delete", "btnTitle": "删除", "btnClass": "warning  ", "btnStyle": 2 }
+    ],
+    "tableColumns": [
+        { "code": "pin", "name": "", "class": "checkColumn", "isKey": 1, "isCheck": 1, "isOrder": 0, "sort": 1 },
+        { "code": "pin", "name": "工号", "class": "", "isCheck": 0, "isOrder": 1, "sort": 2 },
+        { "code": "name", "name": "姓名", "class": "", "isCheck": 0, "isOrder": 1, "sort": 3 }
+    ],
+    "userData": [
+        { "pin": "01", "name": "张三" },
+        { "pin": "02", "name": "李四" }
+    ],
+    "formData": [{
+            "title": "食堂",
+            "name": "canteen",
+            "length": "0",
+            "type": "text",
+            "selectValue": [{ "value": "zgst", "text": "职工食堂" }, { "value": "wjbst", "text": "烷基苯食堂" }],
+            "placeholder": "请选择",
+            "value": null,
+            "remark": "",
+            "regular": "required",
+            "regularError": "请选择食堂"
+        },
+        {
+            "title": "编号",
+            "name": "code",
+            "type": "text",
+            "length": 1,
+            "selectValue": [],
+            "placeholder": "A,B,C,D",
+            "value": null,
+            "remark": "A,B,C..等套餐标准",
+            "regular": "required",
+            "regularError": "请正确输入套餐编号,长度为1"
+        },
+        {
+            "title": "名称",
+            "name": "name",
+            "type": "text",
+            "length": 10,
+            "selectValue": [],
+            "placeholder": "请输入名称",
+            "value": null,
+            "remark": "",
+            "regular": "required",
+            "regularError": "请正确输入套餐名称"
+        },
+        {
+            "title": "是否启用",
+            "name": "status",
+            "type": "checkbox",
+            "length": "10",
+            "selectValue": [0, 1],
+            "placeholder": "",
+            "value": 0,
+            "remark": "",
+            "regular": "",
+            "regularError": ""
+        },
+        {
+            "title": "类型",
+            "name": "type",
+            "type": "select",
+            "length": 0,
+            "selectValue": [{ "value": "zctc", "text": "正常套餐" }, { "value": "qttc", "text": "其他套餐" }],
+            "placeholder": "",
+            "value": "qttc",
+            "remark": "",
+            "regular": "",
+            "regularError": ""
+        },
+        {
+            "title": "基价(元)",
+            "name": "price",
+            "type": "text",
+            "length": 10,
+            "selectValue": [],
+            "placeholder": "套餐的基本价格",
+            "value": "",
+            "remark": "",
+            "regular": "required|number",
+            "regularError": "请输入价格"
+        }
+    ],
+    "moduleCate": ["考勤", "车间", "供应链"],
+    "moduleMenu": [{
+        "id": "01",
+        "name": "考勤",
+        "menu": [{
+                "tit": "考勤一",
+                "submenu": [{
+                    "tit": "选项一"
+                }, {
+                    "tit": "选项二"
+                }, {
+                    "tit": "选项三"
+                }, {
+                    "tit": "选项四"
+                }]
+            },
+            {
+                "tit": "考勤二",
+                "submenu": [{
+                    "tit": "选项一"
+                }, {
+                    "tit": "选项二"
+                }, {
+                    "tit": "选项三"
+                }, {
+                    "tit": "选项四"
+                }]
+            },
+            {
+                "tit": "考勤三",
+                "submenu": [{
+                    "tit": "选项一"
+                }, {
+                    "tit": "选项二"
+                }, {
+                    "tit": "选项三"
+                }, {
+                    "tit": "选项四"
+                }]
+            }
+        ]
+    }],
+    "pagination": {
+        "pageSizes": [1, 2, 3, 4],
+        "pageSize": 1,
+        "currentPage": 1,
+        "total": 4
+    }
+}

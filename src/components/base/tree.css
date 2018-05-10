@@ -1,0 +1,35 @@
+/* ::-webkit-scrollbar              {  }
+::-webkit-scrollbar-button       {  }
+::-webkit-scrollbar-track        {  }
+::-webkit-scrollbar-track-piece  {  }
+::-webkit-scrollbar-thumb        {  }
+::-webkit-scrollbar-corner       {  }
+::-webkit-resizer   */
+
+.deptTree {
+    height: 100%;
+    /* background: #eee; */
+    /* overflow-y: auto; */
+    min-width: 150px;
+    overflow-y: scroll;
+}
+
+.el-tree-node__label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.el-tree {
+    background: #eee
+}
+
+.el-tree-node__content:hover {
+    background-color: #909399;
+    color: #ed7
+}
+
+.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+    background-color: #909399;
+    color: #ed7
+}
